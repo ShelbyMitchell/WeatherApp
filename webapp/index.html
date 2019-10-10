@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="main.css"/>
+    <script  src="weatherapp.js" type = "module"></script>
+
+    <script src="/sugar.js"></script>
+    <script>Sugar.extend()</script>
+  </head>
+  <body>
+    <p> Celsius/Fahrenheit Converter: <input type="text" id="mytemp" />
+    <p id= "myConvertedTemp"></p>
+    <input type = "button" value = "C to F" size = "15" onclick="ctof(mytemp.value)" />
+    <input type = "button" value = "F to C" size = "15" onclick="ftoc(mytemp.value)" />
+    <input id="ClearTemp" type = "button" onclick="myConvertedTemp.innerHTML=''; mytemp.value=''" value=clearTemp />
+    </p>
+
+    <input type="text" name="location" placeholder= "Where?"/>
+
+    <button>C°</button><button>F°</button>
+
+
+    <div class= "days">
+      <div class="day">
+        <div class="monday">
+          <div class="day-name">Monday</div>
+          <div class="temperature">72°F</div>
+          <img src = "sunny.png" class="conditions"/>
+          <div class="wind">4 MPH Wind</div>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="tuesday">
+          <div class="day-name">Tuesday</div>
+          <div class="temperature">65°F</div>
+          <img src = "cloudy.png" class="conditions"/>
+          <div class="wind">7 MPH Wind</div>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="wednesday">
+          <div class="day-name">Wednesday</div>
+          <div class="temperature">63°F</div>
+          <img src = "raining.png" class="conditions"/>
+          <div class="wind">15 MPH Wind</div>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="thursday">
+          <div class="day-name">Thursday</div>
+          <div class="temperature">64°F</div>
+          <img src = "thunder.png" class="conditions"/>
+          <div class="wind">16 MPH Wind</div>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="friday">
+          <div class="day-name">Friday</div>
+          <div class="temperature">65°F</div>
+          <img src = "thunder.png" class="conditions"/>
+          <div class="wind">14 MPH Wind</div>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="saturday">
+          <div class="day-name">Saturday</div>
+          <div class="temperature">74°F</div>
+          <img src = "sunny.png" class="conditions"/>
+          <div class="wind">2 MPH Wind</div>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="sunday">
+          <div class="day-name">Sunday</div>
+          <div class="temperature">76°F</div>
+          <img src = "sunny.png" class="conditions"/>
+          <div class="wind">1 MPH Wind</div>
+        </div>
+      </div>
+
+    </div>
+    <a href="https://darksky.net/poweredby/">Powered By Dark Sky</a>
+  </body>
+</html>

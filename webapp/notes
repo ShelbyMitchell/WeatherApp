@@ -1,0 +1,8 @@
+import potato from import "potato.js"
+
+potato.js
+
+export default{
+  seedling: 2;
+  color: "gold";
+}

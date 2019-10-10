@@ -1,0 +1,69 @@
+[class="days"]{
+  display: grid;
+
+  grid-template: "mon tue wed thu fri sat sun"
+}
+
+[class="monday"]{
+  grid-area: mon;
+  border-color: #3399ff;
+  background-color: #99ddff;
+  text-align: center;
+
+}
+
+[class="tuesday"]{
+  grid-area: tue;
+  background-color: #3399ff;
+  text-align: center;
+}
+
+[class="wednesday"]{
+  grid-area: wed;
+  background-color: #005ce6;
+  text-align: center;
+}
+
+[class="thursday"]{
+  grid-area: thu;
+  background-color: #d9d9d9;
+  text-align: center;
+}
+
+[class="friday"]{
+  grid-area: fri;
+  background-color: #d9d9d9;
+  text-align: center;
+}
+
+[class="saturday"]{
+  grid-area: sat;
+  background-color: #99ddff;
+  text-align: center;
+}
+
+[class="sunday"]{
+  grid-area: sun;
+  background-color: #99ddff;
+  text-align: center;
+}
+
+[class="day"]{
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  padding: 0px;
+  margin-top: 5px;
+  font-family: georgia;
+
+}
+
+[class="temperature"]{
+  color: darkgray;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+[class="conditions"]{
+  width: 80px;
+}
